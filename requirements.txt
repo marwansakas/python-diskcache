@@ -1,1 +1,6 @@
 -e .
+
+matplotlib~=3.8.3
+Django~=5.2.5
+pytest~=8.4.1
+psutil~=7.0.0

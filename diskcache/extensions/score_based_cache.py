@@ -79,3 +79,4 @@ class ScoreBasedCache(Cache):
             if filename and os.path.exists(filename):
                 cleanup(filename)
                 sql("DELETE FROM Cache WHERE filename = ?", (filename,))
+
