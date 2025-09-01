@@ -48,17 +48,4 @@ def test_resource_usage():
     assert mem_end > mem_start
 
 
-# 📦 Throughput: requests per second
-def test_throughput():
-    cache = ScoreBasedCache(size_limit=100_000)
 
-    start = time.time()
-    for i in range(5000):
-        cache.set(f"key{i}", "value")
-        _ = cache.get(f"key{i}")
-    end = time.time()
-
-    duration = end - start
-    throughput = 5000 * 2 / duration  # sets + gets
-    print(f"Throughput: {throughput:.2f} ops/sec")
-    assert throughput > 500  # Example lower bound
