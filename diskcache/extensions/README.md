@@ -9,7 +9,8 @@ This repository introduces a **cost-aware, score-based caching policy** as an ex
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/score-based-cache.git
+   git clone https://github.com/marwansakas/python-diskcache.git
+
    ```
 
 2. Create and activate a virtual environment:
